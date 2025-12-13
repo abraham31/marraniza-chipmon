@@ -13,10 +13,9 @@ FEATURES:
 
 INSTALACION:
 - config/paxi/datapacks/ (zip). Asegúrate de que el .zip contenga directamente las carpetas `data/` y `pack.mcmeta`, no una carpeta extra.
-- El pack declara compatibilidad 15-48 (`supported_formats`), así que debe aparecer en `/datapack list` incluso en mundos 1.20.1+. Si no se ve, revisa que el .zip no tenga doble carpeta.
-- reiniciar server (al cargar el datapack se ejecuta `marranos:setup` -> `marranos:chipmon/setup` automáticamente)
-- /function marranos:chipmon/setup (o el alias corto `/function marranos:setup` para forzar la inicialización)
-- Si el juego dice "Unknown function" al ejecutar el comando, revisa que el .zip contenga directamente `data/` y `pack.mcmeta` y que el datapack aparezca como habilitado en `/datapack list` (el error indica que no se cargó)
+- El pack usa `pack_format` 48 (1.21/1.20.5+). En versiones anteriores el datapack aparece como incompatible y no registra funciones.
+- reiniciar server (al cargar el datapack se ejecuta `marranos:chipmon/setup` automáticamente)
+- /function marranos:chipmon/setup (opcional si quieres forzar la inicialización)
 
 USO:
 - /function marranos:chipmon/buy_normal
