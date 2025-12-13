@@ -1,4 +1,6 @@
-execute as @p[distance=..3] run scoreboard players random @s cm_pick 141 185
+execute as @p[distance=..3] store result score @s cm_pick run time query gametime
+execute as @p[distance=..3] run scoreboard players operation @s cm_pick %= #cm_max_pick_rare cm_pick
+execute as @p[distance=..3] run scoreboard players add @s cm_pick 141
 execute as @p[distance=..3] run tellraw @s {"text":"Tier: RARE","color":"aqua"}
 execute as @p[distance=..3] if score @s cm_pick matches 141 run givepokemon @s dratini
 execute as @p[distance=..3] if score @s cm_pick matches 142 run givepokemon @s dragonair
