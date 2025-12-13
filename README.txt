@@ -1,21 +1,25 @@
-La Marraniza - Chipmon v5 (PAXI)
+La Marraniza - Chipmon (PAXI)
+Compra un Pokémon random usando chips.
 
-FIX:
-- Usa /givepokemonother (tu comando correcto):
-    givepokemonother @s <pokemon>
-    givepokemonother @s <pokemon> shiny
-- Random: execute store result score ... run random value A..B (1.21.1)
+INSTALACIÓN:
+- Copia el ZIP a: config/paxi/datapacks/
+- Reinicia el servidor COMPLETO.
+- Ejecuta una vez:
+    /function marranos:chipmon/setup
 
-FEATURES:
-- Dice el pokemon recibido.
-- SHINY (solo con upgraded): sonido + particulas + mensaje.
-- ID mal escrito (a propósito): pkbadges:upraded_techno_chip
+USO (para botones/command blocks):
+- Normal (sin shiny):
+    /function marranos:chipmon/buy_normal
+  Requiere: 1 pkgbadges:techno_chip
 
-INSTALACION:
-- config/paxi/datapacks/ (zip)
-- reiniciar server
-- /function marranos:chipmon/setup
+- Upgraded (hasta 10% shiny):
+    /function marranos:chipmon/buy_upgraded
+  Requiere: 1 pkgbadges:upgraded_techno_chip
 
-USO:
-- /function marranos:chipmon/buy_normal
-- /function marranos:chipmon/buy_upgraded
+TIERS (se mantienen igual en normal y shiny):
+- common: 70%
+- rare: 25%
+- ultra-rare: 5%
+
+SHINY (solo upgraded):
+- 10% máximo (cm_shiny 1..10)
