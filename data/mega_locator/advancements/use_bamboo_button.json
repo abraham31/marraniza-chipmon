@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "use_button": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "location": {
+          "block": {
+            "blocks": ["minecraft:bamboo_button"]
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "mega_locator:on_use"
+  }
+}
