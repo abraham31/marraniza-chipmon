@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "use_shovel": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "item": {
+          "items": ["minecraft:wooden_shovel"]
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "mega_locator:on_use"
+  }
+}
