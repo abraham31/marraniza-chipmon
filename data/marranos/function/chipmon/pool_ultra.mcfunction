@@ -1,6 +1,7 @@
 execute as @p[distance=..3] store result score @s cm_pick run time query gametime
 execute as @p[distance=..3] run scoreboard players operation @s cm_pick %= #cm_max_pick_ultra cm_pick
 execute as @p[distance=..3] run scoreboard players add @s cm_pick 186
+execute as @p[distance=..3] run tellraw @s [{"text":"[Chipmon Debug] Pick ULTRA: ","color":"yellow"},{"score":{"name":"@s","objective":"cm_pick"}}]
 execute as @p[distance=..3] run tellraw @s {"text":"Tier: ULTRA-RARE","color":"aqua"}
 execute as @p[distance=..3] if score @s cm_pick matches 186 run givepokemon blissey
 execute as @p[distance=..3] if score @s cm_pick matches 187 run givepokemon larvitar
